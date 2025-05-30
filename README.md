@@ -1,2 +1,46 @@
-# sayhey
-Voice-transcription with a messaging service, for notes-to-self, task management or personal voicemail box.
+# Nuxt Minimal Starter
+
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Setup
+
+Make sure to install dependencies:
+
+```bash
+pnpm install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+pnpm dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+pnpm build
+```
+
+Locally preview production build:
+
+```bash
+pnpm preview
+```
+
+Deploy to Cloudflare
+
+```bash
+pnpm deploy
+```
+
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment)
+and [Cloudflare documentation](https://developers.cloudflare.com/workers/frameworks/framework-guides/nuxt/)
+for more information.
+
+
