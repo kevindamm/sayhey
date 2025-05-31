@@ -3,7 +3,6 @@
 	"private": true,
 	"type": "module",
 	"license": "MIT",
-
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
@@ -16,8 +15,8 @@
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix"
 	},
-
 	"dependencies": {
+		"@nuxt/content": "^3.5.1",
 		"@picocss/pico": "^2.1.1",
 		"dotenv": "^16.5.0",
 		"drizzle-orm": "^0.44.0",
@@ -30,7 +29,6 @@
 	},
 	"devDependencies": {
 		"@nuxt/eslint": "^1.4.1",
-		"@nuxtjs/kinde": "^0.2.0",
 		"@pinia/nuxt": "^0.11.0",
 		"drizzle-kit": "^0.31.1",
 		"h3": "^1.15.3",

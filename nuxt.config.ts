@@ -4,12 +4,18 @@ export default defineNuxtConfig({
   modules: [
     'nitro-cloudflare-dev',
     '@pinia/nuxt',
+    '@nuxt/content',
     '@nuxt/eslint',
-    '@nuxtjs/kinde',
   ],
   devtools: { enabled: true },
 
   css: ['@picocss/pico'],
+  content: {
+    database: {
+      type: 'd1',
+      bindingName: 'DB',
+    },
+  },
   compatibilityDate: '2025-05-15',
 
   nitro: {
