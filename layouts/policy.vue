@@ -36,11 +36,15 @@
             </strong>
           </li>
         </ul>
-
         <ul>
-          <li><NuxtLink to="/about">What?</NuxtLink></li>
-          <li><NuxtLink to="/guide">How?</NuxtLink></li>
-          <li><NuxtLink to="/auth">Sign In</NuxtLink></li>
+          <li><NuxtLink to="/policy/privacy">Privacy Policy</NuxtLink></li>
+          <li><NuxtLink to="/policy/terms">Terms of Service</NuxtLink></li>
+          <li>
+            <NuxtLink
+              external
+              to="https://github.com/kevindamm/sayhey/blob/main/LICENSE"
+            >MIT License</NuxtLink>
+          </li>
         </ul>
       </nav>
     </header>
@@ -48,40 +52,5 @@
     <main>
       <slot />
     </main>
-
-    <footer>
-      <p class="copyright">
-        &copy; 2025 Kevin Damm - All Rights Reserved
-      </p>
-      <div class="policy-links">
-        <NuxtLink to="/policy/privacy">Privacy Policy</NuxtLink>
-        |
-        <NuxtLink to="/policy/terms">Terms of Service</NuxtLink>
-        |
-        (MIT Licensed) <NuxtLink
-          external
-          href="https://github.com/kevindamm/sayhey"
-        >Source</NuxtLink>
-      </div>
-    </footer>
   </body>
 </template>
-
-<style>
-header {
-  margin: auto;
-  max-width: 95vw;
-}
-
-footer {
-  font-size: 70%;
-}
-
-.copyright {
-  text-align: center;
-}
-
-.policy-links {
-  text-align: center;
-}
-</style>
