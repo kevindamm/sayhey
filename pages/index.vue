@@ -24,27 +24,82 @@
 
 <template>
   <main class="container">
-    <h1>Recent Notes</h1>
-    <div
-      v-if="status === 'pending'"
-    >
+    <div v-if="status === 'pending'">
       <article aria-busy="true" />
     </div>
-    <article
-      v-for="note of notes"
-      :key="note.id"
-    >
-      {{ note.text }}
-    </article>
+    <div v-else-if="status === 'error'">
+      <p>Oh no!</p>
+      <p>{{ error?.message }}</p>
+    </div>
+
+    <div class="cta">
+      <svg
+        class="mic-input"
+        @click="record"
+      >
+        <!-- mic -->
+      </svg>
+      <button
+        class="key-input"
+        @click="write"
+      >
+        Keyboard
+      </button>
+    </div>
+
+    <div v-if="showTextEntry">
+      <textarea
+        v-model="noteText"
+        class="text-entry"
+      />
+    </div>
+
+    <div v-if="notes && notes?.length > 0">
+      <h1>Recent Notes</h1>
+      <article
+        v-for="note of notes"
+        :key="note.id"
+        v-text="note.text"
+      />
+    </div>
   </main>
 </template>
 
 <script setup lang="ts">
 import type { Note } from '~/shared/types/note'
 
-const { data: notes, status } = await useFetch<Note[]>('/api/notes', {
+const showTextEntry = ref(false)
+const noteText = ref('')
+
+const { data: notes, error, status } = await useFetch<Note[]>('/api/notes', {
   lazy: true,
 })
+
+const record = () => {
+  // hide the mic SVG icon
+  // unhide the MicRecording component
+}
+
+const write = () => {
+  // unhide the NoteEntry text area
+}
 </script>
 
-<style></style>
+<style>
+.cta {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+.mic-input {
+  width: 70cqmin;
+  height: 70cqmin;
+  margin: auto;
+}
+
+.key-input {
+  width: 42cqmin;
+  margin: auto;
+}
+</style>
