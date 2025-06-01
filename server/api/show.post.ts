@@ -1,4 +1,4 @@
-// Copyright (c) 2025 Kevin Damm
+// Copyright 2025 Kevin Damm
 // MIT License
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,31 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/db/schema.ts
+// github:KevinDamm/sayhey/server/api/show.post.ts
 
-import { sqliteTable, integer, text, blob } from 'drizzle-orm/sqlite-core'
-
-export const users = sqliteTable('users', {
-  id: integer('id')
-    .primaryKey({ autoIncrement: true }),
-
-  createdAt: integer('created_at',
-    { mode: 'timestamp' })
-    .notNull(),
-  latestLogin: integer('latest_login',
-    { mode: 'timestamp' })
-    .notNull(),
-
-  name: text('name')
-    .notNull(),
-  avatar: text('avatar')
-    .notNull(),
-  email: text('email')
-    .notNull()
-    .unique(),
-
-  password: blob('pass_enc')
-    .notNull(),
-  salt: blob('salt')
-    .notNull(),
-})
+// Server handler for image file notes
+//
+// POST parameters:
+//   userid (int64, local ID)
+//   bearer token
+//   noteid (int64, typically zero)
+//   title (string, optional)
+//   image (filetype, sent as multipart/form-data)

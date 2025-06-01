@@ -19,4 +19,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/api/note/[id].get.ts
+// github:KevinDamm/sayhey/server/api/write.post.ts
+
+// Server handler for text entry notes
+//
+// POST parameters:
+//   userid (int64, local ID)
+//   bearer token
+//   noteid (int64, may be zero, creates new note)
+//   title (string)
+//   body (string, markdown formatting)
+//   infer_title (boolean)

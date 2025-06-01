@@ -19,4 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/api/[id].delete.ts
+// github:KevinDamm/sayhey/server/api/speak.post.ts
+
+// Server handler for audio file notes, typically recorded via microphone
+//
+// POST parameters:
+//   userid (int64, local ID)
+//   bearer token
+//   noteid (int64, typically zero)
+//   title (string, optional)
+//   audio (filetype, sent as multipart/form-data)
