@@ -25,4 +25,9 @@ useSeoMeta({
   title: page.value?.title,
   description: page.value?.description,
 })
+prerenderRoutes([
+  '',
+  'privacy',
+  'terms',
+].map(page => `/policy/${page}`))
 </script>

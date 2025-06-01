@@ -16,6 +16,11 @@ export default defineNuxtConfig({
       bindingName: 'DB',
     },
   },
+  routeRules: {
+    '/about': { prerender: true },
+    '/guide': { prerender: true },
+    '/policy': { prerender: true },
+  },
   compatibilityDate: '2025-05-15',
 
   nitro: {

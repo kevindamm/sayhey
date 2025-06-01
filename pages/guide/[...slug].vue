@@ -25,4 +25,11 @@ useSeoMeta({
   title: page.value?.title,
   description: page.value?.description,
 })
+prerenderRoutes([
+  '',
+  'dev-env',
+  'page-layout',
+  'core-api',
+  'prod-env',
+].map(page => `/guide/${page}`))
 </script>

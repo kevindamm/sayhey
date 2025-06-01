@@ -34,12 +34,14 @@
 
     <div class="cta">
       <svg
+        v-if="showMicButton"
         class="mic-input"
         @click="record"
       >
         <!-- mic -->
       </svg>
       <button
+        :disabled="toggleKeyboard"
         class="key-input"
         @click="write"
       >
@@ -47,7 +49,7 @@
       </button>
     </div>
 
-    <div v-if="showTextEntry">
+    <div v-if="!toggleKeyboard">
       <textarea
         v-model="noteText"
         class="text-entry"
@@ -68,7 +70,9 @@
 <script setup lang="ts">
 import type { Note } from '~/shared/types/note'
 
-const showTextEntry = ref(false)
+const showMicButton = ref(true)
+const showMicStatus = ref(false)
+const toggleKeyboard = ref(false)
 const noteText = ref('')
 
 const { data: notes, error, status } = await useFetch<Note[]>('/api/notes', {
@@ -76,7 +80,8 @@ const { data: notes, error, status } = await useFetch<Note[]>('/api/notes', {
 })
 
 const record = () => {
-  // hide the mic SVG icon
+  showMicButton.value = false
+  showMicStatus.value = true
   // unhide the MicRecording component
 }
 
