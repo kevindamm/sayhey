@@ -19,7 +19,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/api/[noteid].delete.ts
+// github:KevinDamm/sayhey/server/api/note/[noteid].delete.ts
 
 // Server handler for deleting the note with id [noteid].
 //

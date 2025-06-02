@@ -19,4 +19,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/api/[id]/comments.post.ts
+// github:KevinDamm/sayhey/server/api/note/[noteid]/comments.post.ts
+
+// Server handler for adding a new comment to an existing note.

@@ -19,4 +19,4 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/api/[id]/[comment].delete.ts
+// github:KevinDamm/sayhey/server/api/note/[noteid]/comment/[commid].get.ts

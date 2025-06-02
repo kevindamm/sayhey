@@ -19,4 +19,4 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/api/tagged/[tagid].get.ts
+// github:KevinDamm/sayhey/server/api/note/[noteid].get.ts

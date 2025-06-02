@@ -19,13 +19,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/api/speak.post.ts
+// github:KevinDamm/sayhey/server/api/showing/[doid].post.ts
 
-// Server handler for audio file notes, typically recorded via microphone
+// Server handler for image file notes
 //
 // POST parameters:
 //   userid (int64, local ID)
 //   bearer token
 //   noteid (int64, typically zero)
 //   title (string, optional)
-//   audio (filetype, sent as multipart/form-data)
+//   image (filetype, sent as multipart/form-data)

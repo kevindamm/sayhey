@@ -19,7 +19,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/api/[noteid].post.ts
+// github:KevinDamm/sayhey/server/api/note/[noteid].post.ts
 
 // Server handler for posting a comment to a note for a user.
 //
