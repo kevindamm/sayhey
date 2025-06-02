@@ -19,17 +19,12 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.
 
-  github:KevinDamm/sayhey/pages/about/index.vue
+  github:KevinDamm/sayhey/pages/create.vue
 -->
 
 <template>
-  <div>
-    TODO table of contents for the site's documentation
-
-    <helpful-say-hey-ui />
-  </div>
+  <div>TODO text area (with markdown formatting) (no AI?) client workflow</div>
 </template>
 
-<script lang="ts" setup>
-
+<script setup lang="ts">
 </script>

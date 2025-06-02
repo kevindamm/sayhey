@@ -19,17 +19,9 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.
 
-  github:KevinDamm/sayhey/pages/about/index.vue
+  github:KevinDamm/sayhey/pages/showing.vue
 -->
 
 <template>
-  <div>
-    TODO table of contents for the site's documentation
-
-    <helpful-say-hey-ui />
-  </div>
+  <div>TODO image upload (and AI embellishment) client workflow</div>
 </template>
-
-<script lang="ts" setup>
-
-</script>

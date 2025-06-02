@@ -23,5 +23,5 @@
 -->
 
 <template>
-  <div>TODO mic recording client workflow</div>
+  <div>TODO mic recording (and AI transcription, title, editing) client workflow</div>
 </template>
