@@ -19,29 +19,4 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 //
-// github:KevinDamm/sayhey/server/api/write.post.ts
-
-import { InsertNoteSchema } from '../db/schema'
-
-// Server handler for text entry notes
-//
-// POST parameters:
-//   userid (int64, local ID)
-//   bearer token
-//   title (string, optional, no longer than 255 characters)
-//   body (string, markdown formatting, must be more than a few characters)
-//   infer_title (boolean)
-
-export default defineEventHandler(async (event) => {
-  const result = await readValidatedBody(
-    event, InsertNoteSchema.safeParse)
-
-  if (!result.success) {
-    return sendError(event, createError({
-      statusCode: 422,
-      statusMessage: 'Invalid note; ' + result.error.message,
-    }))
-  }
-
-  return { note: result.data }
-})
+// github:KevinDamm/sayhey/server/api/tagged.post.ts
